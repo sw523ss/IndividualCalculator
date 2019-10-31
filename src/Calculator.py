@@ -2,10 +2,13 @@ def addition (a, b):
     return a + b
 
 def subtraction(a, b):
-        return a - b
+    return a - b
 
 def multiplication(a, b):
-        return a * b
+    return a * b
+
+def division (a, b):
+    return a / b
 
 class Calculator:
     result = 0
@@ -25,4 +28,8 @@ class Calculator:
 
     def multipy(self, a, b):
         self.result = multiplication(a, b)
+        return self.result
+
+    def divide(self, a, b):
+        self.result = division(a, b)
         return self.result
